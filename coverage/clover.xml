@@ -1,26 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1734556961133" clover="3.2.0">
-  <project timestamp="1734556961133" name="All files">
-    <metrics statements="8" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="3" elements="12" coveredelements="9" complexity="0" loc="8" ncloc="8" packages="1" files="4" classes="4"/>
+<coverage generated="1734626133420" clover="3.2.0">
+  <project timestamp="1734626133420" name="All files">
+    <metrics statements="10" coveredstatements="10" conditionals="0" coveredconditionals="0" methods="7" coveredmethods="7" elements="17" coveredelements="17" complexity="0" loc="10" ncloc="10" packages="1" files="2" classes="2"/>
     <file name="assignment.js" path="/home/krios/repos/odin-testing-practice/assignment.js">
-      <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
-      <line num="5" count="0" type="stmt"/>
-      <line num="6" count="0" type="stmt"/>
+      <metrics statements="8" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="6"/>
+      <line num="4" count="1" type="stmt"/>
+      <line num="11" count="1" type="stmt"/>
+      <line num="15" count="1" type="stmt"/>
+      <line num="17" count="1" type="stmt"/>
+      <line num="20" count="1" type="stmt"/>
+      <line num="23" count="1" type="stmt"/>
+      <line num="26" count="1" type="stmt"/>
+      <line num="55" count="1" type="stmt"/>
     </file>
     <file name="cloneArray.js" path="/home/krios/repos/odin-testing-practice/cloneArray.js">
       <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
       <line num="2" count="2" type="stmt"/>
       <line num="5" count="1" type="stmt"/>
-    </file>
-    <file name="subtract.js" path="/home/krios/repos/odin-testing-practice/subtract.js">
-      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-      <line num="2" count="1" type="stmt"/>
-      <line num="4" count="1" type="stmt"/>
-    </file>
-    <file name="sum.js" path="/home/krios/repos/odin-testing-practice/sum.js">
-      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-      <line num="2" count="1" type="stmt"/>
-      <line num="4" count="1" type="stmt"/>
     </file>
   </project>
 </coverage>

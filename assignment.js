@@ -10,11 +10,25 @@ function capitalize(string) {
 function reverseString(string) {
     return string.split("").reverse().join("");
 }
-// Also: const capitalize = ([first, ...rest]) => first.toUpperCase() + rest.join('');
-// 
-module.exports = { capitalize, reverseString };
 
-// 3. A calculator object that contains functions for the basic operations: add, subtract, divide, and multiply. Each of these functions should take two numbers and return the correct calculation.
+// 3. A calculator object that contains functions for the basic operations: add, subtract, divide, and multiply. Each of these functions should take two numbers and return the correct calculation. USE AN OBJECT LITERAL!!!
+const calculator = {
+  add: function(x, y) {
+    return x + y;
+  },
+  subtract: function(x, y) {
+    return x - y;
+  },
+  multiply: function(x, y) {
+    return x * y;
+  },
+  divide: function(x, y) {
+    return x / y;
+  }
+};
+
+// console.log(calculator.add(3, 4))
+
 
 // 4. A caesarCipher function that takes a string and a shift factor and returns it with each character “shifted”. Read more about how a Caesar cipher works.
 
@@ -37,3 +51,5 @@ module.exports = { capitalize, reverseString };
 //     max: 8,
 //     length: 6,
 //   };
+
+module.exports = { capitalize, reverseString, calculator };
