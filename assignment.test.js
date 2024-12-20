@@ -1,4 +1,3 @@
-// const capitalize = require("./assignment");
 const { capitalize, reverseString, calculator, caesarCipher, analyzeArray } = require("./assignment");
 
 test("capitalizes the f in foo", () => {
@@ -23,30 +22,28 @@ test("divides 1 + 2 to equal 0.5", () => {
 });
 
 test("shift wrapping from z to a: ('xyz', 3) to return 'abc'", () => {
-  expect(caesarCipher('xyz', 3)).toBe('abc');
+  expect(caesarCipher("xyz", 3)).toBe("abc");
 });
 test("shift wrapping from Z to A: ('XYZ', 3) to return 'ABC'", () => {
-  expect(caesarCipher('XYZ', 3)).toBe('ABC');
+  expect(caesarCipher("XYZ", 3)).toBe("ABC");
 });
-
 // I added negative shift numbers for fun.
 test("reverse shift wrapping backwards/left to z from a: ('abc', 3) to return 'xyz'", () => {
-  expect(caesarCipher('abc', -3)).toBe('xyz');
+  expect(caesarCipher("abc", -3)).toBe("xyz");
 });
 test("reverse shift wrapping backwards/left to Z from A: ('ABC, 3) to return 'XYZ'", () => {
-  expect(caesarCipher('ABC', -3)).toBe('XYZ');
+  expect(caesarCipher("ABC", -3)).toBe("XYZ");
 });
 test("case preservation: ('HeLLo', 3) to return 'KhOOr'", () => {
-  expect(caesarCipher('HeLLo', 3)).toBe('KhOOr');
+  expect(caesarCipher("HeLLo", 3)).toBe("KhOOr");
 });
 test("punctuation test: ('Hello, World!', 3) to return 'Khoor, Zruog!'", () => {
-  expect(caesarCipher('Hello, World!', 3)).toBe('Khoor, Zruog!');
+  expect(caesarCipher("Hello, World!", 3)).toBe("Khoor, Zruog!");
 });
 
-test('analyzeArray with positive integers', () => {
+test("analyzeArray with positive integers", () => {
   const input = [1, 8, 3, 4, 2, 6];
   const result = analyzeArray(input);
-  
   expect(result).toEqual({
     average: 4,
     min: 1,
@@ -54,11 +51,9 @@ test('analyzeArray with positive integers', () => {
     length: 6
   });
 });
-
-test('analyzeArray with negative integers', () => {
+test("analyzeArray with negative integers", () => {
   const input = [-1, -8, -3, -4, -2, -6];
   const result = analyzeArray(input);
-  
   expect(result).toEqual({
     average: -4,
     min: -8,
@@ -66,11 +61,9 @@ test('analyzeArray with negative integers', () => {
     length: 6
   });
 });
-
-test('analyzeArray with mixed positive and negative integers', () => {
+test("analyzeArray with mixed positive and negative integers", () => {
   const input = [1, -8, 3, -4, 2, 6];
   const result = analyzeArray(input);
-  
   expect(result).toEqual({
     average: 0,
     min: -8,
@@ -78,11 +71,9 @@ test('analyzeArray with mixed positive and negative integers', () => {
     length: 6
   });
 });
-
-test('analyzeArray with a single number', () => {
+test("analyzeArray with a single number", () => {
   const input = [5];
   const result = analyzeArray(input);
-  
   expect(result).toEqual({
     average: 5,
     min: 5,
@@ -90,11 +81,9 @@ test('analyzeArray with a single number', () => {
     length: 1
   });
 });
-
-test('analyzeArray with an empty array', () => {
+test("analyzeArray with an empty array", () => {
   const input = [];
   const result = analyzeArray(input);
-  
   expect(result).toEqual({
     average: NaN,
     min: Infinity,
